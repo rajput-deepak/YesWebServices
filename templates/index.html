@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <!-- ============= Main Section =============== -->
+
+    <section id="home">
+        <div class="row">
+          <div class="col cont">
+            <div class="content">
+              <h3>YES WEB SERVICES IS THE</h3>
+              <h1>"KEY TO SUCCESS"</h1>
+              <p>With Yes Web Services you can avail the best placements and training opportunities from experts.</p>
+              <a class="learn" href="{% url 'index' %}#about">learn more</a>
+              <a class="join" href="{% url 'contact' %}#contact_form">Join Us</a>
+            </div>
+          </div>
+          <div class="col lImg">
+            <img src="{% static "images/p2.png" %}">
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+            <img src="{% static "images/p3.png" %}">
+          </div>
+          <div class="col cont">
+            <div class="content">
+              <h3>EXPLORE ALL OUR SERVICES</h3>
+              <h1><span>with</span> Yes Web Services</h1>
+              <p>Providing digital marketing services like Web Designing, Web Maintenance, Content Marketing, SEO Editions, Image Adevrtisements and related help.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <hr>
+      <!-- end main section -->
+      <!-- ======================= Our Services =========================== -->
+
+      <section id="services">
+        <h1>OUR SERVICES</h1>
+        <div class="container">
+            <a href="{% url 'ad' %}" class="card">
+                <div class="imgFrame">
+                    <img src="{% static "images/311-180.png" %}" alt="img">
+                </div>
+                <div class="contents">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+                </div>
+            </a>
+
+            <a href="{% url 'dm' %}" class="card">
+                <div class="imgFrame">
+                    <img src="{% static "images/311-180.png" %}" alt="img">
+                </div>
+                <div class="contents">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+                </div>
+            </a>
+
+            <a href="{% url 'gd' %}" class="card">
+                <div class="imgFrame">
+                    <img src="{% static "images/311-180.png" %}" alt="img">
+                </div>
+                <div class="contents">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+                </div>
+            </a>
+
+            <a href="{% url 'gyb' %}" class="card">
+                <div class="imgFrame">
+                    <img src="{% static "images/311-180.png" %}" alt="img">
+                </div>
+                <div class="contents">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+                </div>
+            </a>
+
+            <a href="{% url 'ld' %}" class="card">
+                <div class="imgFrame">
+                    <img src="{% static "images/311-180.png" %}" alt="img">
+                </div>
+                <div class="contents">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+                </div>
+            </a>
+
+            <a href="{% url 'mad' %}" class="card">
+                <div class="imgFrame">
+                    <img src="{% static "images/311-180.png" %}" alt="img">
+                </div>
+                <div class="contents">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+                </div>
+            </a>
+
+            <a href="{% url 'wd' %}" class="card">
+              <div class="imgFrame">
+                  <img src="{% static "images/311-180.png" %}" alt="img">
+              </div>
+              <div class="contents">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+              </div>
+            </a>
+
+            <a href="{% url 'wm' %}" class="card">
+              <div class="imgFrame">
+                  <img src="{% static "images/311-180.png" %}" alt="img">
+              </div>
+              <div class="contents">
+                  <h3>Web Development</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, fuga.</p>
+              </div>
+            </a>
+
+        </div>
+      </section>
+      <hr>
+
+      <!-- end services -->
+      <!-- ======================= AboutUs =========================== -->
+      <section id="about">
+        <h1>ABOUT US</h1>
+        <div class="container">
+          <div class="profile">
+            <img src="{% static "images/photo.jpeg" %}" alt="" srcset="">
+          </div>
+          <div class="aboutCont">
+            <p>YES WEB SERVICE is India’s top web design Agency, and we got here by putting our clients’ requirements first. Technology has become increasingly advanced with passaging time. Over the passages of 22 years, YES WEB SERVICE has made the world of web designing an enormous place in the IT field. The YES WEB SERVICE agency intention is to satisfy the client. For that, understanding the client's needs first.<br><b>Mr. Naveen Singh</b> is the founder of YES WEB SERVICE. He is an expert in IT Field, having experience of 22 years. Top companies of YES WEB SERVICE India, which is established in 1998, 16th November. YES WEB SERVICE deals with creating different profiles related to web services such as Web Design, Web Development, Digital Marketing, SEO etc. We have an expert team in our agency who provide the best service to our every client. Agency employ put complete effort to satisfy the client needs as per clients’ requirements.</p>
+            <a href="{% url 'about' %}#aboutUs">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <!-- ======================= Our works =========================== -->
+
+      <section id="works">
+        <h1>OUR TOP SATISFIED CUSTOMERS</h1>
+        <div class="container">
+          <div class="reviewsCard">
+            <div class="revCard">
+              <img src="{% static "images/photo.jpeg" %}" alt="user">
+              <h1>Full Name</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, in. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="revCard">
+              <img src="{% static "images/photo.jpeg" %}" alt="user">
+              <h1>Full Name</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, in. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="revCard">
+              <img src="{% static "images/photo.jpeg" %}" alt="user">
+              <h1>Full Name</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, in. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+{% endblock %}

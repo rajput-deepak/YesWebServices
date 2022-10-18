@@ -1,0 +1,24 @@
+#p_detail{
+    width: 100%;
+}
+#p_detail .container .title h1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: 800;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 30px auto;
+}
+#p_detail .container .imgcnt{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;  
+}
+#p_detail .container img{
+    width: 100%;
+}
+
+.meta_head{
+    color: var(--blue);
+}

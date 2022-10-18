@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YesWebServices</title>
+    <meta name="description" content="Free Web tutorials">
+    <link rel="icon" type="image/x-icon" href="{% static "images/yesservices-1-1.png" %}">
+    <link href="{% static "style/style.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "style/services.css"%}" type="text/css" rel="stylesheet">
+    <link href="{% static "style/footer.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "style/productDtl.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "style/contact.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "style/about.css" %}" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar-fixed-top">
+        <a href="#"><img src="{% static "images/yesservices-1-1.png" %}" class="logo" alt="logo"></a>
+        <div class="group">
+          <ul class="navigation">
+              <li class="navItem"><a href="{% url 'index' %}#home">Home</a></li>
+              <li class="navItem"><a href="{% url 'about' %}#aboutUs">About</a></li>
+              <li class="navItem"><a href="{% url 'index' %}#services">Services</a></li>
+              <li class="navItem"><a href="{% url 'index' %}">Training</a></li>
+              <li class="navItem"><a href="{% url 'contact' %}">Contact Us</a></li>
+              <li class="navItem"><a href="https://yeswebservices-khanna.blogspot.com/">Blogs</a></li>
+          </ul>
+          <div class="search">
+              <span class="icon">
+                  <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                  <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+              </span>
+          </div>
+      </div>
+      <div class="searchBox">
+          <input type="text" placeholder="search here . . .">
+      </div>
+    </header>
+
+    <!-- ============= contents =============== -->
+
+    {% block body %}
+    {% endblock %}
+
+
+    <!-- ======================= footer =========================== -->
+    <footer class="footer" id="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Yes Web Services
+              
+          <h2>Contact</h2>
+          
+          <address>
+            SCF 22, GTB Market, Khanna, India, Punjab<br>
+            +91 7710 503636<br>
+            naveen.mwc@gmail.com
+                
+            <a class="footer__btn" href="mailto:naveen.mwc@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title ">Services</h2>
+      
+            <ul class="nav__ul  nav__ul--extra">
+              <li>
+                <a href="#">Web Desingning</a>
+              </li>
+      
+              <li>
+                <a href="#">Graphic Designing</a>
+              </li>
+                  
+              <li>
+                <a href="#">Digital marketing in Khanna</a>
+              </li>
+              <li>
+                <a href="#">Logo Designing</a>
+              </li>
+              <li>
+                <a href="#">Mobile App Development</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Training</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Digital Marketing</a>
+              </li>
+              
+              <li>
+                <a href="#">Web Development</a>
+              </li>
+              
+              <li>
+                <a href="#">Graphic Designing </a>
+              </li>
+              
+              <li>
+                <a href="#">Web Desingning</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Our Links</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Yes Web Services</a>
+              </li>
+              
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <div class="legal">
+          <p>&copy; 2019 YesWebServices. All rights reserved.</p>
+        </div>
+    </footer>
+
+      
+
+
+    <script src="{% static "script/script.js" %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
